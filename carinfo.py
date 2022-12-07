@@ -56,9 +56,8 @@ if __name__ == "__main__":
     # print(parameters)
     ####################################################################
     car_data = []
-    # car_list  = read_link_from_file("audi.txt")
-    # car_list = car_list[:50]
-    car_list  = read_link_from_file("bidfaxlink.txt")
+    car_list  = read_link_from_file("audi.txt")
+    car_list = car_list[:50]
     PATH = "/home/mateusz/ekspolracja_danych/chromedriver"
     driver = webdriver.Chrome(PATH)
     for link in car_list:
@@ -68,6 +67,5 @@ if __name__ == "__main__":
         car_data.append(param)
 
     json_string = json.dumps(car_data)
-    # with open("audi_data2.json", "w") as file:
-    with open("bidfaxlink.json", "w") as file:
+    with open("audi_data2.json", "w") as file:
         file.write(json_string)

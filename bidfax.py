@@ -4,6 +4,10 @@ from selenium.webdriver.common.by import By
 from random import randint
 from time import sleep
 
+# txt_filename = "audi.txt"
+# json_filename = "audi.json"
+# csv_filename = "audi.csv"
+
 def get_car_urls(driver):
     cars_url = []
     car_on_page = driver.find_element(By.ID, 'dle-content')
@@ -26,7 +30,7 @@ driver = webdriver.Chrome(PATH)
 all_cars = []
 # url = bidfax_url + "{}/".format(i)
 driver.get(bidfax_url)
-for i in range(2, 3):
+for i in range(2, 20):
     all_cars.extend(get_car_urls(driver))
     driver.get(bidfax_url + "{}/".format(i)) 
 # all_elem = elem.find_elements('p')
@@ -34,6 +38,6 @@ for i in range(2, 3):
 # print(elem.get_attribute("innerHTML"))/\
 driver.quit()
 
-with open("bidfaxlink.txt", "w") as f:
+with open("audi.txt", "w") as f:
     for link in all_cars:
         f.write(link + "\n")
