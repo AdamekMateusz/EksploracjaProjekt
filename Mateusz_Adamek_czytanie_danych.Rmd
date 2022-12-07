@@ -7,7 +7,9 @@ output: pdf_document
 
 # Intro
 Dane zostały pobrane scrapowane ze strony https://en.bidfax.info . Strona jest dynamicznie renderowana, Do scrapowania  została użyta biblioteka pythonowa selenium. Dane zostały zapisane do pliku JSON a pozniej przeformatowane do pliku CSV.
+
 Kod oraz więcej informacji znajdują sie na githubie:
+Instrukcja jak wygenerować dane za pomocą plików pythowych również znajduje się na githubie.
 https://github.com/AdamekMateusz/EksploracjaProjekt.git
 
 # Etapy budowania i uruchamiania kodu
