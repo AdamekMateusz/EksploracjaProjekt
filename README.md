@@ -36,6 +36,9 @@ Należy uruchomiec po kolei nastepujace pliki
 ```
 Rezultatem powinno byc wygenerowanie pliku .csv
 
+## Napotkane problemy
+Strona bidfax wykrywa scrapowanie dlatego zostało dodane randomow generowane oóźnienie. (bez tego zcrapowanie jest blokowane z danego addresu IP)
+
 # EksploracjaProjekt[EN]
 ## Tools Needed
 You will need the following tools to run the following programs:
@@ -77,6 +80,3 @@ The result should be a .csv file generated
 
 ## Problems encountered
 The bidfax website detects scraping, so a random generated delay has been added. (without this, scraping is blocked from a given IP address)
-
-## Napotkane problemy
-Strona bidfax wykrywa scrapowanie dlatego zostało dodane randomow generowane oóźnienie. (bez tego zcrapowanie jest blokowane z danego addresu IP)
